@@ -80,7 +80,7 @@ public class TetrisGame : IDrawable
         for (var x = 0; x < Width; x++)
         {
             var cell = Matrix[y][x];
-            if (CurrentElement?.Contains(x, y) == true)
+            if (CurrentElement?.IsDone == false && CurrentElement?.Contains(x, y) == true)
                 cell = CurrentElement.Fill;
             if (cell.Alpha == 0) cell = Colors.Gray;
             canvas.FillColor = cell;
