@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tetris.MainPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <GraphicsView x:Name="gameArea" WidthRequest="400" HeightRequest="400" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></GraphicsView>
+            <HorizontalStackLayout Padding="0" Spacing="0">
+                <HorizontalStackLayout Padding="50,0,25,0" Spacing="25" VerticalOptions="Start">
+                    <Button
+                        x:Name="BtnLeft"
+                        ImageSource="left.svg"
+                        SemanticProperties.Hint="Moves the element left"
+                        Clicked="OnMoveLeft"
+                        HorizontalOptions="Fill" />
+                    <Button
+                        x:Name="BtnRight"
+                        ImageSource="right.svg"
+                        SemanticProperties.Hint="Moves the element left"
+                        Clicked="OnMoveRight"
+                        HorizontalOptions="Fill" />
+                </HorizontalStackLayout>
+                <VerticalStackLayout Padding="25,0" Spacing="25">
+                    <Button
+                        x:Name="BtnFlip"
+                        ImageSource="flip.svg"
+                        SemanticProperties.Hint="Flips the element"
+                        Clicked="OnFlip" />
+                    <Button
+                        x:Name="BtnDown"
+                        ImageSource="down.svg"
+                        SemanticProperties.Hint="Moves the element down"
+                        Clicked="OnMoveDown" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
