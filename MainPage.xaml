@@ -7,7 +7,7 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <GraphicsView x:Name="gameArea" WidthRequest="400" HeightRequest="400" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></GraphicsView>
+            <GraphicsView x:Name="gameArea" WidthRequest="300" HeightRequest="400" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
             <HorizontalStackLayout Padding="0" Spacing="0">
                 <HorizontalStackLayout Padding="50,0,25,0" Spacing="25" VerticalOptions="Start">
                     <Button
