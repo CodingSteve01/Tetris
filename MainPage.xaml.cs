@@ -7,8 +7,8 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         try
         {
-            const int framesPerSecond = 60;
-            CurrGame = new TetrisGame(10, 20, framesPerSecond, 100);
+            const int framesPerSecond = 30;
+            CurrGame = new TetrisGame(10, 20, framesPerSecond, 50);
             gameArea.Drawable = CurrGame;
             var timer = Dispatcher.CreateTimer();
             timer.Interval = TimeSpan.FromMilliseconds(1000f / framesPerSecond);
